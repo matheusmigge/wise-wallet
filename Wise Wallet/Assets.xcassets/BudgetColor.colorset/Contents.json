@@ -2,8 +2,8 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "tvos",
-        "reference" : "systemPinkColor"
+        "platform" : "ios",
+        "reference" : "systemGrayColor"
       },
       "idiom" : "universal"
     },

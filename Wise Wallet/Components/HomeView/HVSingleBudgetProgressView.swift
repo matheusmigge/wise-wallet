@@ -13,7 +13,7 @@ struct HVSingleBudgetProgressView: View {
     var budgetValue: Double
     var amountSpent: Double
     var progressBarWidth: Double = 330
-    let progressBarHeight: Double = 20
+    let progressBarHeight: Double = 40
     
     private var spentProgressPercent: Double {
         return amountSpent / budgetValue
@@ -29,13 +29,13 @@ struct HVSingleBudgetProgressView: View {
     var body: some View {
         VStack {
             ZStack(alignment: .leading) {
-                Capsule()
+                RoundedRectangle(cornerRadius: 10.0)
                     .frame(width: progressBarWidth, height: progressBarHeight)
-                    .foregroundStyle(Color.accentColor)
+                    .foregroundStyle(Color("BudgetColor"))
                 
-                Capsule()
+                RoundedRectangle(cornerRadius: 10.0)
                     .frame(width: spentProgressBarWidth, height: progressBarHeight)
-                    .foregroundStyle(Color.pink)
+                    .foregroundStyle(Color("SpentColor"))
                 
                 HStack {
                     Text("\(budgetName)")

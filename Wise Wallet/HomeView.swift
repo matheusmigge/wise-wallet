@@ -9,29 +9,23 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var selectedOption = "Semanal"
+    @State private var selectedOption = "Mensal"
     @State private var isSheetPresented = false
     
     
     var body: some View {
         NavigationStack {
-            VStack {
-                List {
-                    Section (content: {
-                        
-                        HVRemainingBudgetView(budgetValue: 1400, amountSpent: 346)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                        
-                        HVBudgetSummaryView()
-                            .frame(maxWidth: .infinity, alignment: .center)
-            
-                    }, header: {
-                        LogoView()
-                    })
-                    .listRowSeparator(.hidden)
+            ScrollView {
+                VStack (spacing: 30){
+                    
+                    HVRemainingBudgetView(budgetValue: 1400, amountSpent: 346)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                    
+                    HVBudgetSummaryView()
+                        .frame(maxWidth: .infinity, alignment: .center)
+                    
                 }
             }
-        
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Picker("Frequência", selection: $selectedOption) {

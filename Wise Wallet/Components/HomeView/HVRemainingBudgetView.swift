@@ -30,47 +30,57 @@ struct HVRemainingBudgetView: View {
     var body: some View {
         
         ZStack {
-            VStack {
+            VStack(spacing: 2) {
                 Text("Disponível para o mês:")
-                    .font(.subheadline)
                 
-                Text("R$ \(formatNumber(balance))")
-                    .fontWeight(.black)
-                    .font(.title)
-                    .foregroundStyle(Color.accentColor)
+                HStack {
+                    Circle()
+                        .frame(height: 15)
+                        .foregroundStyle(Color("BudgetColor"))
+                    
+                    Text("R$ \(formatNumber(balance))")
+                        .fontWeight(.bold)
+                        .font(.title)
+                        .foregroundStyle(Color("BudgetColor"))
+                }
                 
                 Text("Gasto até agora:")
                     .font(.subheadline)
-                Text("R$ \(formatNumber(amountSpent))")
-                    .fontWeight(.black)
-                    .font(.title2)
-                    .foregroundStyle(Color.pink)
+                
+                HStack {
+                    Circle()
+                        .frame(height: 15)
+                        .foregroundStyle(Color("SpentColor"))
+                    
+                    Text("R$ \(formatNumber(amountSpent))")
+                        .fontWeight(.bold)
+                        .font(.title2)
+                        .foregroundStyle(Color("SpentColor"))
+                }
             }
             
             Circle()
                 .trim(from: 0.0,to: progressBarWidth)
-                .stroke(Color.accentColor, style: .init(lineWidth: progressBarHeight, lineCap: .round))
+                .stroke(Color("BudgetColor"), style: .init(lineWidth: progressBarHeight, lineCap: .round))
                 .rotationEffect(.degrees(135))
             Circle()
                 .trim(from: 0.0,to: spentProgressBarWidth)
-                .stroke(Color.pink, style: .init(lineWidth: progressBarHeight, lineCap: .round))
+                .stroke(Color("SpentColor"), style: .init(lineWidth: progressBarHeight, lineCap: .round))
                 .rotationEffect(.degrees(135))
-                .shadow(color: .pink, radius: 5)
+                .shadow(color: Color("SpentColor"), radius: 5)
             
             VStack {
                 Spacer()
                 
                 Text("Janeiro")
-                    .fontWeight(.black)
+                    .fontWeight(.bold)
                     .foregroundStyle(Color("DefaultFontColor"))
                     .frame(width: 140, height: 30)
-                    .background(Color.accentColor)
+                    .background(Color("SpentColor"))
                     .cornerRadius(10.0)
             }
         }
-        .frame(width: 250, height: 250)
-        .padding(.top, 25)
-        .padding(.bottom, 20)
+        .frame(height: 260)
     }
     
     func formatNumber(_ number: Double) -> String {
