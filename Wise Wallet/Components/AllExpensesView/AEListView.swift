@@ -19,6 +19,12 @@ struct AEListView: View {
         return formatter
     }()
     
+    let hourFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        return formatter
+    }()
+    
     var body: some View {
         
         List {
@@ -27,7 +33,7 @@ struct AEListView: View {
                     ForEach(section.1) { expense in
                         HStack {
                             VStack {
-                                Text("\(expense.date, formatter: dateFormatter)")
+                                Text("\(expense.date, formatter: hourFormatter)")
                                     .multilineTextAlignment(.center)
                                     .font(.caption2)
                                     .frame(width: AllExpensesListItemWidth)
@@ -45,7 +51,7 @@ struct AEListView: View {
                             Spacer()
                             
                             VStack {
-                                Text("\(expense.value.formatted())")
+                                Text("\(formatNumber(expense.value))")
                                     .multilineTextAlignment(.center)
                                     .font(.caption2)
                                     .frame(width: AllExpensesListItemWidth)
@@ -77,7 +83,16 @@ struct AEListView: View {
         }.sorted { $0.0 > $1.0 }
     }
 
-
+    func formatNumber(_ number: Double) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.minimumFractionDigits = 2
+        numberFormatter.maximumFractionDigits = 2
+        numberFormatter.groupingSeparator = "."
+        numberFormatter.decimalSeparator = ","
+        
+        return numberFormatter.string(from: NSNumber(value: number)) ?? ""
+    }
 }
 
 struct AEListView_Previews: PreviewProvider {

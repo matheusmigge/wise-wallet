@@ -20,7 +20,6 @@
 		569D99682B50A4B2000C5D76 /* AllExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569D99672B50A4B1000C5D76 /* AllExpensesView.swift */; };
 		56F09ADF2B55AA67008E9447 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F09ADE2B55AA67008E9447 /* Expense.swift */; };
 		56F09AE12B55ACDB008E9447 /* MockObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F09AE02B55ACDB008E9447 /* MockObjects.swift */; };
-		56F09AE32B55B05F008E9447 /* AETableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F09AE22B55B05F008E9447 /* AETableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		569D99672B50A4B1000C5D76 /* AllExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExpensesView.swift; sourceTree = "<group>"; };
 		56F09ADE2B55AA67008E9447 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		56F09AE02B55ACDB008E9447 /* MockObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockObjects.swift; sourceTree = "<group>"; };
-		56F09AE22B55B05F008E9447 /* AETableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AETableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 		561F8AA12B58652600112670 /* AllExpensesView */ = {
 			isa = PBXGroup;
 			children = (
-				56F09AE22B55B05F008E9447 /* AETableView.swift */,
 				561F8A9C2B573F2300112670 /* AEListView.swift */,
 			);
 			path = AllExpensesView;
@@ -208,7 +205,6 @@
 				563157772B4F2FB500A99C95 /* Wise_WalletApp.swift in Sources */,
 				56154FC52B5001380084B244 /* LogoView.swift in Sources */,
 				563157892B4F752100A99C95 /* HVBudgetSummaryView.swift in Sources */,
-				56F09AE32B55B05F008E9447 /* AETableView.swift in Sources */,
 				563157872B4F746900A99C95 /* HVRemainingBudgetView.swift in Sources */,
 				56F09AE12B55ACDB008E9447 /* MockObjects.swift in Sources */,
 				569D99682B50A4B2000C5D76 /* AllExpensesView.swift in Sources */,
