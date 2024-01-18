@@ -69,6 +69,8 @@ struct HVRemainingBudgetView: View {
             }
         }
         .frame(width: 250, height: 250)
+        .padding(.top, 25)
+        .padding(.bottom, 20)
     }
     
     func formatNumber(_ number: Double) -> String {

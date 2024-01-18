@@ -10,10 +10,7 @@ import SwiftUI
 struct HVBudgetSummaryView: View {
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 8) {
-            
-            Text("Resumo de gastos")
-                .font(.title2)
+        VStack(alignment: .leading){
             
             ScrollView {
                 VStack(spacing: 2) {

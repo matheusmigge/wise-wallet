@@ -9,14 +9,29 @@ import SwiftUI
 
 struct AllExpensesView: View {
     
+    @State private var isSheetPresented = false
+    
     var body: some View {
         
-        VStack(spacing: 20) {
-            AEHeaderView()
-            AEListView()
-        }
-        .padding(.top, 10)
-        .navigationBarBackButtonHidden()
+        AEListView()
+            .navigationTitle("Histórico")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        isSheetPresented.toggle()
+                    } label: {
+                        Image(systemName: "plus.circle")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 25)
+                            .foregroundStyle(Color.accentColor)
+                    }
+                    .sheet(isPresented: $isSheetPresented) {
+                        AddingNewExpenseView()
+                    }
+                }
+            }
     }
 }
 

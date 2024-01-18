@@ -8,24 +8,68 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var selectedOption = "Semanal"
+    @State private var isSheetPresented = false
+    
+    
     var body: some View {
         NavigationStack {
             VStack {
-                
-                HVHeaderView()
-                
-                ScrollView {
-                    VStack(spacing: 30) {
+                List {
+                    Section (content: {
                         
                         HVRemainingBudgetView(budgetValue: 1400, amountSpent: 346)
-                            .padding(.top, 40)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                        
                         HVBudgetSummaryView()
+                            .frame(maxWidth: .infinity, alignment: .center)
+            
+                    }, header: {
+                        LogoView()
+                    })
+                    .listRowSeparator(.hidden)
+                }
+            }
+        
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Picker("Frequência", selection: $selectedOption) {
+                        Text("Semanal").tag("Semanal")
+                        Text("Mensal").tag("Mensal")
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding()
+                }
+                
+                ToolbarItem(placement: .topBarLeading) {
+                    NavigationLink {
+                        AllExpensesView()
+                    } label: {
+                        Image(systemName: "list.bullet.circle")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 25)
+                            .foregroundStyle(Color.accentColor)
+                    }
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        isSheetPresented.toggle()
+                    } label: {
+                        Image(systemName: "plus.circle")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 25)
+                            .foregroundStyle(Color.accentColor)
+                    }
+                    .sheet(isPresented: $isSheetPresented) {
+                        AddingNewExpenseView()
                     }
                 }
             }
-            .padding(.top, 10)
         }
-        .navigationBarBackButtonHidden()
     }
 }
 

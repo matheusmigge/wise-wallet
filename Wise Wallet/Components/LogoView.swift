@@ -16,7 +16,7 @@ struct LogoView: View {
                 .background(Color.accentColor)
                 .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
                 .fontWeight(.black)
-                .foregroundColor(Color.white)
+                .foregroundColor(Color("DefaultFontColor"))
             Text("Wallet")
         }
         .foregroundColor(Color.accentColor)
