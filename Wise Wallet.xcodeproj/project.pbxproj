@@ -7,19 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56154FC12B4FED470084B244 /* HVHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56154FC02B4FED470084B244 /* HVHeaderView.swift */; };
+		56154FC32B4FF84F0084B244 /* HVSingleBudgetProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56154FC22B4FF84F0084B244 /* HVSingleBudgetProgressView.swift */; };
+		56154FC52B5001380084B244 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56154FC42B5001380084B244 /* LogoView.swift */; };
+		56154FC72B5079950084B244 /* AddingNewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56154FC62B5079950084B244 /* AddingNewExpenseView.swift */; };
+		561F8A9D2B573F2300112670 /* AEListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561F8A9C2B573F2300112670 /* AEListView.swift */; };
+		561F8A9F2B581F9200112670 /* AEHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561F8A9E2B581F9200112670 /* AEHeaderView.swift */; };
 		563157772B4F2FB500A99C95 /* Wise_WalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563157762B4F2FB500A99C95 /* Wise_WalletApp.swift */; };
-		563157792B4F2FB500A99C95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563157782B4F2FB500A99C95 /* ContentView.swift */; };
+		563157792B4F2FB500A99C95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563157782B4F2FB500A99C95 /* HomeView.swift */; };
 		5631577B2B4F2FB800A99C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5631577A2B4F2FB800A99C95 /* Assets.xcassets */; };
 		5631577F2B4F2FB800A99C95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5631577E2B4F2FB800A99C95 /* Preview Assets.xcassets */; };
+		563157872B4F746900A99C95 /* HVRemainingBudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563157862B4F746900A99C95 /* HVRemainingBudgetView.swift */; };
+		563157892B4F752100A99C95 /* HVBudgetSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563157882B4F752100A99C95 /* HVBudgetSummaryView.swift */; };
+		569D99682B50A4B2000C5D76 /* AllExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569D99672B50A4B1000C5D76 /* AllExpensesView.swift */; };
+		56F09ADF2B55AA67008E9447 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F09ADE2B55AA67008E9447 /* Expense.swift */; };
+		56F09AE12B55ACDB008E9447 /* MockObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F09AE02B55ACDB008E9447 /* MockObjects.swift */; };
+		56F09AE32B55B05F008E9447 /* AETableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F09AE22B55B05F008E9447 /* AETableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56154FC02B4FED470084B244 /* HVHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVHeaderView.swift; sourceTree = "<group>"; };
+		56154FC22B4FF84F0084B244 /* HVSingleBudgetProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVSingleBudgetProgressView.swift; sourceTree = "<group>"; };
+		56154FC42B5001380084B244 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		56154FC62B5079950084B244 /* AddingNewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingNewExpenseView.swift; sourceTree = "<group>"; };
+		561F8A9C2B573F2300112670 /* AEListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEListView.swift; sourceTree = "<group>"; };
+		561F8A9E2B581F9200112670 /* AEHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEHeaderView.swift; sourceTree = "<group>"; };
 		563157732B4F2FB500A99C95 /* Wise Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wise Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		563157762B4F2FB500A99C95 /* Wise_WalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wise_WalletApp.swift; sourceTree = "<group>"; };
-		563157782B4F2FB500A99C95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		563157782B4F2FB500A99C95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5631577A2B4F2FB800A99C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5631577C2B4F2FB800A99C95 /* Wise_Wallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wise_Wallet.entitlements; sourceTree = "<group>"; };
 		5631577E2B4F2FB800A99C95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		563157862B4F746900A99C95 /* HVRemainingBudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVRemainingBudgetView.swift; sourceTree = "<group>"; };
+		563157882B4F752100A99C95 /* HVBudgetSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVBudgetSummaryView.swift; sourceTree = "<group>"; };
+		569D99672B50A4B1000C5D76 /* AllExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExpensesView.swift; sourceTree = "<group>"; };
+		56F09ADE2B55AA67008E9447 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		56F09AE02B55ACDB008E9447 /* MockObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockObjects.swift; sourceTree = "<group>"; };
+		56F09AE22B55B05F008E9447 /* AETableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AETableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +57,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		561F8AA02B58651D00112670 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				56154FC02B4FED470084B244 /* HVHeaderView.swift */,
+				563157862B4F746900A99C95 /* HVRemainingBudgetView.swift */,
+				563157882B4F752100A99C95 /* HVBudgetSummaryView.swift */,
+				56154FC22B4FF84F0084B244 /* HVSingleBudgetProgressView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		561F8AA12B58652600112670 /* AllExpensesView */ = {
+			isa = PBXGroup;
+			children = (
+				561F8A9E2B581F9200112670 /* AEHeaderView.swift */,
+				56F09AE22B55B05F008E9447 /* AETableView.swift */,
+				561F8A9C2B573F2300112670 /* AEListView.swift */,
+			);
+			path = AllExpensesView;
+			sourceTree = "<group>";
+		};
 		5631576A2B4F2FB500A99C95 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				563157762B4F2FB500A99C95 /* Wise_WalletApp.swift */,
-				563157782B4F2FB500A99C95 /* ContentView.swift */,
+				563157782B4F2FB500A99C95 /* HomeView.swift */,
+				56154FC62B5079950084B244 /* AddingNewExpenseView.swift */,
+				569D99672B50A4B1000C5D76 /* AllExpensesView.swift */,
+				563157852B4F740600A99C95 /* Components */,
+				56F09ADD2B55AA50008E9447 /* Models */,
 				5631577A2B4F2FB800A99C95 /* Assets.xcassets */,
 				5631577C2B4F2FB800A99C95 /* Wise_Wallet.entitlements */,
 				5631577D2B4F2FB800A99C95 /* Preview Content */,
@@ -67,6 +116,25 @@
 				5631577E2B4F2FB800A99C95 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		563157852B4F740600A99C95 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				56154FC42B5001380084B244 /* LogoView.swift */,
+				561F8AA02B58651D00112670 /* HomeView */,
+				561F8AA12B58652600112670 /* AllExpensesView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		56F09ADD2B55AA50008E9447 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56F09ADE2B55AA67008E9447 /* Expense.swift */,
+				56F09AE02B55ACDB008E9447 /* MockObjects.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +207,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				563157792B4F2FB500A99C95 /* ContentView.swift in Sources */,
+				563157792B4F2FB500A99C95 /* HomeView.swift in Sources */,
+				56154FC72B5079950084B244 /* AddingNewExpenseView.swift in Sources */,
+				56154FC12B4FED470084B244 /* HVHeaderView.swift in Sources */,
+				56154FC32B4FF84F0084B244 /* HVSingleBudgetProgressView.swift in Sources */,
+				56F09ADF2B55AA67008E9447 /* Expense.swift in Sources */,
+				561F8A9F2B581F9200112670 /* AEHeaderView.swift in Sources */,
 				563157772B4F2FB500A99C95 /* Wise_WalletApp.swift in Sources */,
+				56154FC52B5001380084B244 /* LogoView.swift in Sources */,
+				563157892B4F752100A99C95 /* HVBudgetSummaryView.swift in Sources */,
+				56F09AE32B55B05F008E9447 /* AETableView.swift in Sources */,
+				563157872B4F746900A99C95 /* HVRemainingBudgetView.swift in Sources */,
+				56F09AE12B55ACDB008E9447 /* MockObjects.swift in Sources */,
+				569D99682B50A4B2000C5D76 /* AllExpensesView.swift in Sources */,
+				561F8A9D2B573F2300112670 /* AEListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct Wise_WalletApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
